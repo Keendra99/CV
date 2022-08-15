@@ -17,6 +17,7 @@
 }
 /* /https://coolors.co/palette/f72585-b5179e-7209b7-560bad-480ca8-3a0ca3-3f37c9-4361ee-4895ef-4cc9f0 */
 body{
+    font-family: title;
     display: grid;
     grid-template-columns: 200PX 60px 80px repeat(8, 1fr) 200PX;
     grid-template-rows: 40px 50PX repeat(10, 1fr) 50PX 40PX;
@@ -74,258 +75,221 @@ li{
 }
 
 /* ============================= About me ================================= */
-.main-aboutme{
-    
+/* Presentation */
+#main-aboutme{
     height: 80vh;
     display: flex;
     flex-direction: column;
-}
-.main-aboutme .monimg{
-    height: auto ;
-    display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
 }
-.monimg h1{
-    font-family: title;
+#main-aboutme #presentationBox{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+#title{
+    width: 80%;
+    color:#519461;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#presentationBox h1{
     color: #5aca76;
     text-align: center;
-    font-size: 6vh;
-    margin-top: 3vh;
+    font-size: 50px;
+
 }
-.presentation{
+#presentationBox{
+    padding-bottom: 10px;
+    font-family: title;
     text-align: center;
 }
-.presentation p{
-    color: #aca8a8;
-    margin-top: 5vh;
-    margin-left: 8vw;
-    padding-right: 5vw;
-    
-}
-.img{
-    margin-bottom: 1vh;
+#presentation{
+    width: 100%;
     display: flex;
-    margin:3vh;
+    justify-content: space-evenly;
+    align-items: center;
     flex-direction: column;
+}
+#presentationBox  p{
+
+    color: #aca8a8bb;
+width: 50%;
+
+}
+#avatar{
+    display: flex;
+    justify-content: flex-end;
     border-bottom: 2px #409154 solid;
     border-left: 2px #409154 solid;
-    width: 40vw;
-    height: 30vh;
-    background-image: url(./pages/img/avataaars.svg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-size: 90%;
-    background-position: center;
+    width: 300px;
+    height: 210px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
-.img img{
-    margin: 0 auto;
-    width: 13vw;
-    height: 41vh;
-}
-.main-aboutme h2{
-    color:#519461;
-}
+/* characteristic */
 
-/* === Mid-Box === */
-.me{
-    height: 75%;
-}
-.mid-Box{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 98%;
-}
-.mid-Box h2{
-margin-bottom: 3vh;
-}
-.mid-Box li{
-    color: rgb(207, 210, 212);
-    }
-.midLeftBox{
-    width: 100%;
+#characteristicBox{
     display: flex;
     justify-content: space-evenly;
-    margin-left: 7.5vw;
-    border-bottom: 2px solid #5aca76;
-    border-right: 2px solid #5aca76;
+    width: 90%;
+    height: 300px;
+    margin-left: 100px;
+    margin-bottom: 10px;
 }
-.travel{
-    text-align: center;
-    width: 15vw;
+#qualities{
+padding-right: 10px;
+border-right: #5aca76 1px solid;
+display: flex;
+align-items: center;
+width: 400px;
+display: flex;
+flex-direction: column;
 }
-.midLeftBox li{
-    margin: 2vh;
-}
-.hobbies{
-    display: flex;
-    width: 40vw;
-    height: 13vh;
-    border-top: 2px solid #409154;
-
-    justify-content: space-evenly;
-}
-
-.hobbies > .band{
-    border: #5aca76 solid 1px;
-    width: 5vh;
-    height:5vh;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-}
-.band{
-    transition: 1s;
-    display: flex;
-    justify-content: center;
-}
-
-.hobbies i{
-    color: rgb(207, 210, 212);
-    font-size: 3vh;
-    margin-top: 1vh;
-
-
-    /* writing-mode: vertical-rl;
-    text-orientation: upright;
-*/
-} 
-/* .Pers2{
-    margin-top: 3vh;
-    width: 100%;
-} */
-.diagram p{
-    text-align: center;
-    margin-bottom: 1vh;
-    color: #61996f;
-    font-size:15px;
-}
-.diagram{
-    margin-top: 2vh;
-    margin-left: 3vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-.diagram div > div{
-border: 1px solid #5aca76;
-}
-#tw{
-    border-left: 2px solid #5aca76;
-    border-top: 2px solid #5aca76;
-    padding: 2vh;
-}
-#TW{
-    
-    background-image: conic-gradient(
-        #222222 70deg,  
-        #5aca76 0);
-    text-align: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #409154;
-}
-
-#C{
-    background-image: conic-gradient(
-        #222222 80deg,  
-            #5aca76 0);
-    text-align: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #409154;
-}
-#c{
-    padding: 2vh;
-}
-#I{
-    background-image: conic-gradient(
-        #222222 40deg,  
-        #5aca76 0);
-    text-align: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #409154;
-}
-#i{
-    padding: 2vh;
-}
-#Crea{
-    background-image: conic-gradient(
-        #222222 70deg,  
-        #5aca76 0);
-    text-align: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #409154;
-}
-#crea{
-    padding: 2vh;
-}
-#OE{
-    background-image: conic-gradient(
-        #222222 70deg,  
-            #5aca76 0);
-    text-align: center;
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
-    background-color: #409154;
-}
-#oe{
-    padding: 2vh;
-    border-right: 2px solid #5aca76 ;
-    border-bottom: 2px solid #5aca76 ;
-}
-#hobbies{
+.qualityElements{
     display: flex;
     flex-direction: column;
 }
-.details{
-    color: #5aca76;
-    margin: 0 auto;
-    border-radius: 20px;
-    border: 1px solid  #5aca76;
+#characteristicBox h3{
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+color: #45ac5e;
+}
+.qualityBar{
+    border: #397e49 1px solid;
+    border-radius: 7px;
+    width: 300px;
+    height: 20px;
+}
+.valueBar{
+    border-radius: 7px;
+}
+#aValue{
+    background-color: #45ac5e;
+    height: 100%;
     width: 80%;
-    height: 5vh;
+}
+#bValue{
+    background-color: #45ac5e;
+    height: 100%;
+    width: 75%;
+}
+#cValue{
+    background-color: #45ac5e;
+    height: 100%;
+    width: 80%;
+}
+#dValue{
+    background-color: #45ac5e;
+    height: 100%;
+    width: 90%;
+}
+#eValue{
+    background-color: #45ac5e;
+    height: 100%;
+    width: 87%;
+}
+
+#hobbiesElements{
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: #5aca76 1px solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 400px;
+}
+.band{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+.band > i{
+margin-right:30px ;
+color: #3aa354;
+font-size: 35px;
+}
+#languages{
+    width: 200px;
+    height: 100%;
     display: flex;
     justify-content: center;
-    padding: 1.5vh;
+    align-items: center;
 }
-/* .details i{
-font-size: x-larger;
-} */
+#languagesElements{
+    padding: 20px;
+    height: 100%;
+    color: #3aa354;
+}
+#languagesElements ul{
+
+    height: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+#skillsBox{
+    border-top: #5aca76 1px solid;
+    width: 85%;
+    height: 180px;
+    margin-left: 10%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.iconPL i {
+    color: #397e49;
+    font-size: 60px;
+}
+#mysql{
+    color: #397e49;
+    font-size: 40px;
+}
+
+
 /* ============================= Experience ================================= */
 
-/* Creer animation du bas en haut de div qui remonte comme des gouttes d'eau, de facon random la vitesse? */
-/* https://codepen.io/v_trefil/pen/ZpRBRP */
 .main-exp{
     height: 82vh;
     overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
     flex-direction: column;
-    padding: 2rem;
+    padding-right: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 .forScroll{
+    padding: 20px;
     width: 100%;
     height: 100%;
     overflow-y: scroll;
 }
-.main-exp li{
+.main-exp  li{
+    display: flex;
+    flex-direction: column;
     margin:0 auto ;
     font-size: 2vh;
-    padding: 3vh;
     display: flex;
     align-items: center;
-    width: 45vw;
-    height: 12vh;
+    width: 40vw;
+    height: fit-content;
     color: rgb(207, 210, 212);
+}
+.main-exp h3{
+    padding-bottom: 10px;
+}
+.exp2 li{
+    text-align: center;
+    padding: 3vh;
+}
+.exp3 li{
+    text-align: center;
+    padding: 3vh;
 }
 .main-exp h2{
     text-align: center;
@@ -334,179 +298,37 @@ font-size: x-larger;
     color:#409154;
 }
 .one{
-    display: flex;
-    justify-content: flex-start;
+
     border-left: 1px solid #5aca76;
     border-left: 1px solid #5aca76;
     border-bottom: 1px solid #5aca76;
 }
 .two{
-    justify-content: flex-end;
     border-left: 1px solid #5aca76;
     border-bottom: 1px solid #5aca76;
 }
 .three{
-    justify-content: flex-start;
     border-right: 1px solid #5aca76;
     border-bottom: 1px solid #5aca76;
 }
 .four{
-    justify-content: flex-end;
     border-right: 1px solid #5aca76;
     border-bottom: 1px solid #5aca76;
 }
 .five{
-    justify-content: flex-start;
     border-left: 1px solid #5aca76;
     border-bottom: 1px solid #5aca76;
 }
 .six{
-    justify-content: flex-end;
     border-right: 1px solid #5aca76;
     border-bottom: 1px solid #5aca76;
 }
 .seven{
-    justify-content: flex-start;
     border-left: 1px solid #5aca76;
     border-bottom: 1px solid #5aca76;
 }
 .eight{
-    justify-content: flex-end;
     border-right: 1px solid #5aca76;
-}
-/* ============================= Skills ================================= */
-@keyframes rotate {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
-}
-@keyframes rotateInverse {
-    from {transform: rotate(360deg);
-    }
-    to {
-        transform: rotate(0deg);
-    }
-}
-
-.main-cmpt{
-display: flex;
-    height: 100%;
-    margin-left: 5vw;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-evenly;
-
-}
-
-#container{
-    /* z-index: 3; */
-    outline: 4px solid #5aca76;
-    outline-offset: -100px;
-    border: #51946173 10px dashed;
-    border-radius: 50%;
-    width: 650px;
-    height: 650px;
-    display: grid;
-    grid-template-columns:repeat(6, 1fr);
-    grid-template-rows:repeat(6, 1fr) ;
-    position: relative;
-    animation: 45s linear infinite rotate;
-    align-items: center;
-    justify-content: center
-}
-
-.main-cmpt i{
-    font-size: 4rem;
-    background-color: #222222;
-    color :#54a167;
-    border-radius: 50%;
-}
-.main-cmpt i:hover{
-    background-color: #222222;
-    color :#91cea0;
-}
-#mysql:hover{
-    background-color: #222222;
-    color :#91cea0;
-}
-#container .iconPL{
-    margin: 4vh;
-    border-radius: 50%;
-    /* border: 1px solid #5aca76; */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.iconPL{
-    animation: 45s linear infinite rotateInverse;
-}
-#compt{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation: 22.5s linear infinite rotateInverse;
-    color: #54a167;
-
-    margin: 0 auto;
-    grid-row: 3/5;
-    grid-column: 3/5;
-    border: 8px dashed #5aca766e;;
-    /* border: 3px solid #5aca766e; */
-    width: 15vw;
-    height: 30vh;
-    border-radius: 50%;
-    outline: 5px solid #5aca76;
-    outline-width: 5px;
-    outline-offset: -50px;
-}
-#compt div{
-    animation: 45s linear infinite rotate;
-
-}
-#html{
-    grid-row: 2;
-    grid-column: 3;
-}
-#css{
-    grid-row: 2;
-    grid-column: 4;
-}
-#js{
-    grid-row: 3;
-    grid-column: 2;
-}
-#php{
-    grid-row: 4;
-    grid-column: 2;
-}
-#mysql{
-    background-color: #222222;
-    font-size: 3vh;
-    color: #54a167;
-    grid-row: 5;
-    grid-column: 3;
-}
-#sf{
-    grid-row: 5;
-    grid-column: 4;
-}
-#git{
-    grid-row: 4;
-    grid-column: 5;
-}
-#angular{
-    grid-row: 3;
-    grid-column: 5;
-}
-.detailSkills{
-border-right: #409154 solid 1px;
-border-left: #409154 solid 1px;
-justify-content: flex-end;
-width: 20vw;
-height: 40vh;
 }
 
 /* ============================= Portfolio ================================= */
@@ -707,12 +529,10 @@ color: #72f59344;
 /* ============El Diablo Responsive de la Muerte ======== */
 
 @media (hover: hover){
-    .band:hover{
-        height: 10vh;
-        display: flex;
-        align-items: center;
-    }
+
 }
+
+
 
 @media screen and (max-width: 1556px){
     body{
@@ -729,15 +549,7 @@ color: #72f59344;
         padding-left: 5%;
         padding-right: 2%;
     }
-    .img{
-        height: 70%;
-        margin: 0.5vh;
-        margin-top: 3vh;
-    }
-    .mid-Box{
-        margin-top: 4vh;
-        margin-bottom: 6vh;
-    }
+
 }
 @media screen and (max-width: 1394px){
 
@@ -750,86 +562,6 @@ color: #72f59344;
     }
     nav i{
         font-size: 35px;
-    }
-    .img{
-        height: 60%;
-    }
-}
-@media screen and (max-width: 1120px){
-    .mid-Box{
-
-        margin-bottom: 2vh;
-    }
-.Pers2{
-    margin: 0 auto;
-    height: 250px;
-}
-.diagram{
-    height: 250px;
-    flex-wrap:wrap;
-}
-.cercleBox{
-    margin-left: 2vh;
-    margin-right: 2vh;
-}
-.Dcercle{
-    margin: 0 auto;
-    height: 50px;
-    width: 50px;
-}
-.presentation p{
-    font-size: 13px;
-}
-.monimg h1{
-    font-size: 4vh;
-}
-#oe{
-    border: none;
-    padding: 2px;
-    margin-bottom: 10px;
-    }
-    #tw{
-        border: none;
-    }
-    #TW{
-        height: 75px;
-        width: 75px;
-    }
-    #C{
-        height: 75px;
-        width: 75px;
-    }
-    #I{
-        height: 75px;
-        width: 75px;
-    }
-    #Crea{
-        height: 75px;
-        width: 75px;
-    }
-    #OE{
-        height: 75px;
-        width: 75px;
-    }
-    #oe{
-        padding: 2vh;
-    }
-.diagram{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 15px;
-    height: 30vh;
-}
-
-.mid-Box{
-    margin-top: 6vh;
-    height: 180px;
-    }
-}
-@media screen and (max-width: 1034px){
-    .mid-Box{
-        margin-top: 10px;
     }
 }
 @media screen and (max-width: 985px){
@@ -844,150 +576,165 @@ nav{
     border-radius: 0;
     width: 90%;
     height: 5vh;
-    /* left: 35px;
-    top: 35px;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;  */
-}
-.main-aboutme{
-    margin-top: 70px;
-}
-.main-aboutme .monimg{
-    justify-content:flex-end;
-}
-body main{
-padding: 0;
-}
-.monimg h1{
-    text-align: end;
-    margin-right: 25px;
-}
-.presentation{
-    width: 70%;
-    padding-left: 20px;
-}
-.img{
-    margin-right: 25px;
-    width:20%;
-    height: 80%;
-}
-.presentation > p{
-    padding-right: 20px;
-    text-align: end;
 }
 #useless{
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
     flex-direction: row;
-    margin-top: 0px;
+    align-items: center;
 }
-#myself{
-    grid-row: 2;
-    grid-column: 2;
+#characteristicBox{
+    margin-left: 0;
 }
-#myExp{
-    grid-row: 3;
-    grid-column: 3;
+body >main{
+    padding-top: 80px;
+    padding-left: 0;
+    padding-right: 0;
 }
-#myPortfolio{
-    grid-row: 3;
-    grid-column: 1;
+#skillsBox{
+    margin-left: 0;
+    width: 98%;
 }
-#myContact{
-    grid-row: 1;
-    grid-column: 3;
-}
-.Pers{
-    padding: 10px;
-}
-
-.monimg{
-    margin-bottom: 15px;
-}
-.mid-Box{
-    margin-bottom: 0;
-}
-.diagram{
-    margin-top: 0;
-}
-.diagram p{
-    font-size:12px;
+#presentationBox  p{
+    width: 70%;
 }
 }
-
-@media screen and (max-width: 815px){
-.monimg  h1{
+/* AboutMe */
+@media screen and (max-width: 1250px){
+#characteristicBox h3{
+    font-size: 15px;
+}
+.qualityBar{
+    width: 250px;
+    height: 17px;
+}
+.band > i{
     font-size: 30px;
 }
-.presentation > p{
-    padding-left: 40px;
-    text-align: end;
+#languages h2{
+    font-size: 20px;
 }
-.details{
-    display: none;
 }
-.mid-Box{
-    margin-top: 4vh;
-    display: flex;
+@media screen and (max-width: 1095px){
+#presentationBox h1{
+    font-size: 40px;
+}
+#presentationBox h2{
+    font-size:20px;
+}
+#presentationBox p{
+    font-size:13px;
+}
+}
+@media screen and (max-width: 815px){
+#avatar{
+    width: 200px;
+    height: 150px;
+}
+.qualityBar{
+    width: 200px;
+    height: 15px;
+}
+.band > i{
+    font-size: 25px;
+}
+.iconPL i{
+    font-size: 45px;
+}
+#mysql{
+    font-size: 20px;
+}
+}
+@media screen and (max-width: 756px){
+    #presentationBox h1{
+        font-size:30px;
+    }
+    #presentationBox h2{
+        font-size:15px;
+    }
+    #presentationBox p{
+        font-size:12px;
+    }
+    #languagesElements ul{
+        font-size:15px;
+    }
+}
+@media screen and (max-width: 708px){
+#characteristicBox{
     flex-direction: column;
-}
-
-.travel{
+    height: 300px;
     width: 100%;
-    display: flex;
-    border: none;
-    flex-direction: row;
 }
-.langues{
+#qualities{
+    border-bottom: #5aca76 1px solid;
     width: 100%;
-    display: flex;
-    border: none;
-    flex-direction: row;
-
+    border-right: none;
 }
-.midLeftBox{
-    display: flex;
-    border: none;
-    flex-direction: column;
-    width: 100%;
-    /* margin-left: 100px; */
-}
-.midLeftBox ul{
-    width: 100%;
+.qualityElements{
     display: flex;
     flex-direction: row;
+    align-items: center;
+}
+.qualityBar{
+    margin-left: 10px;
+    height: 10px;
+}
+#hobbiesElements{
+    border-bottom: #5aca76 1px solid;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    width: 100%;
+    border-right: none;
     justify-content: space-evenly;
-
 }
-.midLeftBox > li{
+.band{
     display: flex;
-
+    flex-direction: column;
 }
-.mid-Box h2{
+.band > i{
+    margin: 5px auto;
+    font-size: 20px;
+}
+.band > h3{
+    font-size: 10px;
+}
+#skillsBox{
+    height: 80px;
+}
+
+#languagesElements{
+    padding: 0;
+    height: 100%;
+}
+#languages{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20px;
+}
+#languagesElements ul{
     display: flex;
     align-items: center;
-    margin-bottom: 0vh;
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
-.hobbies{
-    margin-top: 3vh;
-    border: none;
+#languagesElements li{
     width: 100%;
+
 }
-.hobbies .band{
-    border-radius: 50%;
+body >main{
+    padding-top: 75px;
+}
+#main-aboutme{
+    display: flex;
+    justify-content:initial;
 }
 }
-@media screen and (max-width: 785px){
-    .presentation > p{
-        padding-left: 55px;
-    }
-    .monimg  h1{
-        font-size: 25px;
-    }
-}
+
+
 
 
 /* FORMAT MOBILE */
@@ -1000,11 +747,7 @@ padding: 0;
 nav{
     position: absolute;
     border-radius: 0;
-    /* width: 90%;
-    height: 5vh; */
-    /* grid-column-start: 2;
-    grid-column-end: 11;
-    grid-row: 2; */
+
 }
 #useless{
     display: flex;
@@ -1012,85 +755,6 @@ nav{
     flex-direction: row;
     margin-top: 0px;
 }
-.main-aboutme > .monimg {
-    display: flex;
-    flex-direction: column;
-    margin-top: 2vh;
-}
-.img{
-    display: none;
-}
-.presentation{
-    width: 100%;
-}
-.monimg h1{
-    margin-bottom: 1vh;
-    text-align: center;
-}
-.presentation > p{
-    margin: 0;
-    padding-left: 0;
-    text-align:center;
-}
-.midLeftBox h2{
-    font-size: 20px;
-}
-}
-@media screen and (max-width: 559px){
-    .monimg h1{
-        margin-top: 4vh;
-        margin-bottom: 3vh;
-    }
-    .mid-Box{
-        margin-top: 2vh;
-        margin-bottom: 2vh;
-    }
-.Dcercle{
-    border-radius: 0;
-}
-nav{
-    width: 85%;
-}
-#oe{
-    padding: 0;
-    margin-bottom: 0;
-    }
-    #TW{
-        height: 50px;
-        width: 50px;
-    }
-    #C{
-        height: 50px;
-        width: 50px;
-    }
-    #I{
-        height: 50px;
-        width: 50px;
-    }
-    #Crea{
-        height: 50px;
-        width: 50px;
-    }
-    #OE{
-        height: 50px;
-        width: 50px;
-    }
-    #TW{
-    }
-    .diagram{
-        margin: 0 auto;
-        padding: 0;
-    }
-    .hobbies{
-        height: 60px;
-    }
-    .hobbies .band{
-        width: 4vh;
-        height:4vh;
-    }
-    .hobbies i{
-        color: rgb(207, 210, 212);
-        font-size: 2vh;
-    }
-}
 
+}
+@media screen and (max-width: 559px){}

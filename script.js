@@ -11,7 +11,6 @@ const routes = {
     "/":"pages/aboutMe.html",
     "/index.html":"pages/Aboutme.html",
     "/Exp":"pages/Exp.html",
-    "/Skills":"pages/Skills.html",
     "/Portfolio":"pages/Portfolio.html",
     "/Contact":"pages/Contact.html",
     404: "pages/404.html"
@@ -52,135 +51,135 @@ console.log(window.history);
 loadPage()
 
 // =================== Roue CMPT ==================
-function skills(){
-    const its = document.querySelector('#compt div')
-    const icons = document.querySelectorAll('.iconPL')
-    const html  = document.querySelector('#html')
-    const css = document.querySelector('#css')
-    const js= document.querySelector('#js')
-    const php= document.querySelector('#php')
-    const mysql= document.querySelector('#mysql')
-    const git= document.querySelector('#git')
-    const angular= document.querySelector('#angular')
-    const sf= document.querySelector('#sf')
+// function skills(){
+//     const its = document.querySelector('#compt div')
+//     const icons = document.querySelectorAll('.iconPL')
+//     const html  = document.querySelector('#html')
+//     const css = document.querySelector('#css')
+//     const js= document.querySelector('#js')
+//     const php= document.querySelector('#php')
+//     const mysql= document.querySelector('#mysql')
+//     const git= document.querySelector('#git')
+//     const angular= document.querySelector('#angular')
+//     const sf= document.querySelector('#sf')
 
-    icons.forEach(a=>a.addEventListener("click", revealSkill))
+//     icons.forEach(a=>a.addEventListener("click", revealSkill))
 
-    function revealSkill(e){
-    switch (this.id) {
-        case "html":
-            its.textContent = "HTML"
-            break
-        case "css":
-            its.textContent = "CSS"
-            its.style.width = "fit-content"
-            its.style.height = "fit-content"
-            // its.style.padding = "5vh"
-            break
-        case "js":
-            its.textContent = "JavaScript"
-            its.style.width = "fit-content"
-            its.style.height = "fit-content"
-            // its.style.padding = "5vh"
-            break
-        case "php":
-            its.textContent = "PHP"
-            its.style.width = "fit-content"
-            its.style.height = "fit-content"
-            // its.style.padding = "5vh"
-            break
-        case "mysql":
-            its.textContent = "MySQL"
-            its.style.width = "fit-content"
-            its.style.height = "fit-content"
-            // its.style.padding = "5vh"
-            break
-        case "sf":
-            its.textContent = "Symphony"
-            its.style.width = "fit-content"
-            its.style.height = "fit-content"
-            // its.style.padding = "5vh"
-            break
-        case "git":
-            its.textContent = "GIT"
-            its.style.width = "fit-content"
-            its.style.height = "fit-content"
-            // its.style.padding = "5vh"
-            break
-        case "angular":
-            its.textContent = "Angular"
-            its.style.width = "fit-content"
-            its.style.height = "fit-content"
-            // its.style.padding = "5vh"
-            break
-    }
-}
-console.log(its)
-}
+//     function revealSkill(e){
+//     switch (this.id) {
+//         case "html":
+//             its.textContent = "HTML"
+//             break
+//         case "css":
+//             its.textContent = "CSS"
+//             its.style.width = "fit-content"
+//             its.style.height = "fit-content"
+//             // its.style.padding = "5vh"
+//             break
+//         case "js":
+//             its.textContent = "JavaScript"
+//             its.style.width = "fit-content"
+//             its.style.height = "fit-content"
+//             // its.style.padding = "5vh"
+//             break
+//         case "php":
+//             its.textContent = "PHP"
+//             its.style.width = "fit-content"
+//             its.style.height = "fit-content"
+//             // its.style.padding = "5vh"
+//             break
+//         case "mysql":
+//             its.textContent = "MySQL"
+//             its.style.width = "fit-content"
+//             its.style.height = "fit-content"
+//             // its.style.padding = "5vh"
+//             break
+//         case "sf":
+//             its.textContent = "Symphony"
+//             its.style.width = "fit-content"
+//             its.style.height = "fit-content"
+//             // its.style.padding = "5vh"
+//             break
+//         case "git":
+//             its.textContent = "GIT"
+//             its.style.width = "fit-content"
+//             its.style.height = "fit-content"
+//             // its.style.padding = "5vh"
+//             break
+//         case "angular":
+//             its.textContent = "Angular"
+//             its.style.width = "fit-content"
+//             its.style.height = "fit-content"
+//             // its.style.padding = "5vh"
+//             break
+//     }
+// }
+// console.log(its)
+// }
 // ===================== About me IMG ==========
-function Home(){
-const img = document.querySelector(".img")
-const images = [
-    '<img src="./pages/img/avataaars (1).svg">',
-    '<img src="./pages/img/avataaars (2).svg">',
-    '<img src="./pages/img/avataaars (3).svg">',
-    '<img src="./pages/img/avataaars (4).svg">',
-    '<img src="./pages/img/avataaars (5).svg">'
-]
-console.log(img)
-img.addEventListener("mouseenter",DontHoverMe)
-img.addEventListener("mouseleave",Stopit)
-function DontHoverMe(){
-    if(img.innerHTML == ""){
-        let i = Math.floor(Math.random() * images.length)
-        let image = images[i]
-        img.innerHTML = image
-    }
-    // images.style.backgroundSize = "50%"
-}
-function Stopit(){
-    img.innerHTML = ""
-}
+// function Home(){
+// const img = document.querySelector(".img")
+// const images = [
+//     '<img src="./pages/img/avataaars (1).svg">',
+//     '<img src="./pages/img/avataaars (2).svg">',
+//     '<img src="./pages/img/avataaars (3).svg">',
+//     '<img src="./pages/img/avataaars (4).svg">',
+//     '<img src="./pages/img/avataaars (5).svg">'
+// ]
+// console.log(img)
+// img.addEventListener("mouseenter",DontHoverMe)
+// img.addEventListener("mouseleave",Stopit)
+// function DontHoverMe(){
+//     if(img.innerHTML == ""){
+//         let i = Math.floor(Math.random() * images.length)
+//         let image = images[i]
+//         img.innerHTML = image
+//     }
+//     // images.style.backgroundSize = "50%"
+// }
+// function Stopit(){
+//     img.innerHTML = ""
+// }
 
-}
+// }
 
 // ===================== Details of Hobbies =============
 
-function revealHobbies(){
-    const div = document.querySelectorAll(".band")
-    const p = document.querySelector(".details")
+// function revealHobbies(){
+//     const div = document.querySelectorAll(".band")
+//     const p = document.querySelector(".details")
 
-    const computer = document.querySelector("#computer")
-    const book = document.querySelector("#book")
-    const game = document.querySelector("#game")
-    const cine = document.querySelector("#cine")
-    const music = document.querySelector("#music")
-    const fitness = document.querySelector("#fitness")
+//     const computer = document.querySelector("#computer")
+//     const book = document.querySelector("#book")
+//     const game = document.querySelector("#game")
+//     const cine = document.querySelector("#cine")
+//     const music = document.querySelector("#music")
+//     const fitness = document.querySelector("#fitness")
 
-    div.forEach(a=>a.addEventListener("mouseover", showHobbies))
+//     div.forEach(a=>a.addEventListener("mouseover", showHobbies))
     
 
-    function showHobbies(){
-        if(this === computer){
-            p.textContent = "J'aime la technologie !"
-        }
-        else if(this === book){
-            p.textContent = "J'aime lire !"
-        }
-        else if(this === game){
-            p.textContent = "J'aime jouer !"
-        }
-        else if(this === cine){
-            p.textContent = "J'aime regarder des series/films/animes !"
-        }
-        else if(this === music){
-            p.textContent = "J'adore écouter de la musique !"
-        }
-        else if(this === fitness){
-            p.textContent = "Je garde la forme en faisant du sport !"
-        }
-    }
-}
+//     function showHobbies(){
+//         if(this === computer){
+//             p.textContent = "J'aime la technologie !"
+//         }
+//         else if(this === book){
+//             p.textContent = "J'aime lire !"
+//         }
+//         else if(this === game){
+//             p.textContent = "J'aime jouer !"
+//         }
+//         else if(this === cine){
+//             p.textContent = "J'aime regarder des series/films/animes !"
+//         }
+//         else if(this === music){
+//             p.textContent = "J'adore écouter de la musique !"
+//         }
+//         else if(this === fitness){
+//             p.textContent = "Je garde la forme en faisant du sport !"
+//         }
+//     }
+// }
 
 // --------------------Carousel---------------------
 
