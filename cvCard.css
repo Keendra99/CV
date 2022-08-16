@@ -124,8 +124,8 @@ width: 50%;
     justify-content: flex-end;
     border-bottom: 2px #409154 solid;
     border-left: 2px #409154 solid;
-    width: 300px;
-    height: 210px;
+    width: 270px;
+    height: 270px;
     margin-top: 20px;
     margin-right: 20px;
 }
@@ -276,7 +276,7 @@ font-size: 35px;
     font-size: 2vh;
     display: flex;
     align-items: center;
-    width: 40vw;
+    width: 80%;
     height: fit-content;
     color: rgb(207, 210, 212);
 }
@@ -353,8 +353,8 @@ font-size: 35px;
 .cards{
     box-shadow: 5px 5px 10px #030e05,-5px -5px 10px ;
     border: #5aca76 solid 2px;
-    width: 17vw;
-    height: 45vh;
+    width: 300px;
+    height: 370px;
     transition: 3s;
 }
 .cards:hover{
@@ -441,26 +441,34 @@ color: #72f59344;
 /* ============================= Contact ================================= */
 .main-contact{
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    font-size: 4rem;
+    font-size: 50px;
     margin-left: 5vw;
-    height: 81.2vh;
-    font-size: 5rem;
+    height: 100%;
     align-items: center;
-
 }
-.box{
+.element{
+    display: flex;
+    flex-direction: row;
+}
+#mail{
+    font-size: 30px;
+}
+/* .box{
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #478f58;
-    height: 79.5vh;
+    height: 98%;
     width: 10vw;
 }
 .box div{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 11vw;
+
 }
 #mail{
     z-index: 2;
@@ -483,7 +491,7 @@ color: #72f59344;
 #arobase{
     color: #478f58;
     background-color:#222222;
-    /* border: solid 1px #397e49; */
+    /* border: solid 1px #397e49; 
     width: 11vw;
     height: 20vh;
     padding: 20px;
@@ -524,7 +532,7 @@ color: #72f59344;
     align-items: center;
     height: 70vh;
     transition: 1s;
-}
+} */
 
 /* ============El Diablo Responsive de la Muerte ======== */
 
@@ -597,7 +605,18 @@ body >main{
 #presentationBox  p{
     width: 70%;
 }
+.main-exp{
+    padding-left: 0;
 }
+.main-exp  li{
+    width: 80%;
+    padding-right: 0px;
+}
+.forScroll{
+    padding: 0px;
+}
+}
+
 /* AboutMe */
 @media screen and (max-width: 1250px){
 #characteristicBox h3{
@@ -661,31 +680,41 @@ body >main{
 @media screen and (max-width: 708px){
 #characteristicBox{
     flex-direction: column;
-    height: 300px;
+    align-items: center;
+    height: 380px;
     width: 100%;
 }
 #qualities{
-    border-bottom: #5aca76 1px solid;
-    width: 100%;
+    width: 350px;
     border-right: none;
 }
 .qualityElements{
+    width: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 .qualityBar{
     margin-left: 10px;
     height: 10px;
 }
 #hobbiesElements{
+    border-top: #5aca76 1px solid;
     border-bottom: #5aca76 1px solid;
     display: flex;
     flex-direction: row;
     padding: 5px;
+    margin-right: 10px;
     width: 100%;
     border-right: none;
     justify-content: space-evenly;
+    margin-top: 10px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+#hobbiesElements h3{
+    text-align: center;
 }
 .band{
     display: flex;
@@ -699,7 +728,10 @@ body >main{
     font-size: 10px;
 }
 #skillsBox{
-    height: 80px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+
 }
 
 #languagesElements{
@@ -707,13 +739,13 @@ body >main{
     height: 100%;
 }
 #languages{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 20px;
+    height: 35px;
 }
 #languagesElements ul{
     display: flex;
@@ -726,15 +758,19 @@ body >main{
 
 }
 body >main{
-    padding-top: 75px;
+    padding-top: 85px;
 }
 #main-aboutme{
     display: flex;
-    justify-content:initial;
+    justify-content: initial;
+}
+#qualities{
+    padding-bottom: 15px;
+}
+#presentationBox{
+    margin-bottom: 25px;
 }
 }
-
-
 
 
 /* FORMAT MOBILE */
@@ -757,4 +793,83 @@ nav{
 }
 
 }
-@media screen and (max-width: 559px){}
+@media screen and (max-width: 617px){
+    #main-aboutme > #presentationBox{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #avatar{
+        border: #5aca76 1px solid;
+        margin: 0  auto;
+        width: 150px;
+        height: 150px;
+    }
+    #presentation p{
+        width: 90%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    #presentation h1{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    .iconPL i{
+        font-size: 30px;
+}
+#qualities{
+    padding-bottom: 10px;
+}
+}
+@media screen and (max-width: 617px){
+    .band i{
+        font-size: 15px;
+    }
+    #hobbiesElements div > h3{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 617px){
+    #avatar{
+        width: 120px;
+        height: 120px;
+    }
+    .iconPL i{
+        font-size: 25px;
+}
+#qualities{
+    width: 300px;
+}
+.qualityBar{
+    height: 6px;
+    width: 155px;
+}
+#presentationBox{
+    margin-bottom: 10px;
+}
+}
+@media screen and (max-width: 432px){
+    #avatar{
+        width: 110px;
+        height: 110px;
+    }
+    #qualities{
+        width: 270px;
+    }
+    .qualityBar{
+        height: 6px;
+        width: 145px;
+    }
+}
+/* experience */
+@media screen and (max-width: 600px){
+    .main-exp h2{
+        font-size: 30px;
+    }
+    .main-exp h3{
+        font-size: 20px;
+    }
+    .main-exp p{
+        font-size: 15px;
+    }
+}
+

@@ -208,40 +208,40 @@ loadPage()
 // }
 
 //================================ Contact Mail ==========================
-function showEmail(){
+// function showEmail(){
 
-const mailPlace = document.querySelector("#mail #middle")
-const mailBox = document.querySelector("#mail")
-const begin = document.querySelector("#begin")
-const end = document.querySelector("#end")
-const arobase = document.querySelector("#arobase")
-const span = document.querySelector("#arobase #middle")
+// const mailPlace = document.querySelector("#mail #middle")
+// const mailBox = document.querySelector("#mail")
+// const begin = document.querySelector("#begin")
+// const end = document.querySelector("#end")
+// const arobase = document.querySelector("#arobase")
+// const span = document.querySelector("#arobase #middle")
 
-mailBox.addEventListener("mouseover", emailReveal)
-mailBox.addEventListener("mouseleave", emailHide)
+// mailBox.addEventListener("mouseover", emailReveal)
+// mailBox.addEventListener("mouseleave", emailHide)
 
-function emailReveal(){
-    // span.style.position="fixed"
-    end.style.marginTop="6vh"
-    begin.style.marginBottom="6vh"
-    arobase.style.display="flexbox"
-    arobase.style.flexDirection="column"
-    // begin.style.fontSize="5vh"
-    // end.style.fontSize="5vh"
-    // begin.style.height="6vh"
-    begin.textContent = "jacquet.kendra"
-    // begin.style.WritingMode="vertical-rl"
-    // begin.style.textOrientation="upright"
-    // end.style.height="6vh"
-    end.textContent ="hotmail.com"
-    // end.style.WritingMode="vertical-rl"
-    // end.style.textOrientation="upright"
-}
-function emailHide(){
-    begin.textContent = ""
-    end.textContent =""
-}
+// function emailReveal(){
+//     // span.style.position="fixed"
+//     end.style.marginTop="6vh"
+//     begin.style.marginBottom="6vh"
+//     arobase.style.display="flexbox"
+//     arobase.style.flexDirection="column"
+//     // begin.style.fontSize="5vh"
+//     // end.style.fontSize="5vh"
+//     // begin.style.height="6vh"
+//     begin.textContent = "jacquet.kendra"
+//     // begin.style.WritingMode="vertical-rl"
+//     // begin.style.textOrientation="upright"
+//     // end.style.height="6vh"
+//     end.textContent ="hotmail.com"
+//     // end.style.WritingMode="vertical-rl"
+//     // end.style.textOrientation="upright"
+// }
+// function emailHide(){
+//     begin.textContent = ""
+//     end.textContent =""
+// }
 
-}
+// }
 
 
