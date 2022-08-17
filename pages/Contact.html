@@ -2,19 +2,23 @@
 <main class="main-contact">
 
     <div id="box">
-        <div class="element" id="btnCV"><p>Télécharger mon </p><a href="./img/CV_2022-07-27_Kendra_Jacquet.pdf" download="./img/CV_2022-07-27_Kendra_Jacquet.pdf">CV</a></div>
-        <div class="element" id="mail"><span>Contactez-moi par mail : JACQUET.KENDRA@HOTMAIL.COM</span></div>
+        <div class="element" id="boxBtnCV"><button id="btnCV"><a href="./img/CV_2022-07-27_Kendra_Jacquet.pdf" download="./img/CV_2022-07-27_Kendra_Jacquet.pdf">CV</a></button></div>
+    
     </div>
+
+    <div id="form">
     <form>
-        <fieldset>
-        <label for="Prénom">Prénom :</label>
-        <input type="text" id="Prénom" name="Prénom" placeholder="Votre prénom" autofocus required>
+        <label id="labelprenom" for="Prénom">Prénom :</label>
+        <input id="inputprenom" type="text" id="Prénom" name="Prénom" placeholder="Votre prénom" autofocus required>
 
-        <label for="Nom">Prénom :</label>
-        <input type="text" id="Nom" name="Nom" placeholder="Votre nom" required>
+        <label id="labelnom" for="Nom">Nom :</label>
+        <input type="text" id="inputnom" name="Nom" placeholder="Votre nom" required>
 
-        <label for="commentaire"></label>
-<textarea name="commentaire" id="commentaire" cols="30" rows="10"></textarea>
+        <label  id="labelemail" for="email">Votre Email :</label>
+    <input type="email" name="email" id="inputemail">
+
+        <textarea name="commentaire" id="commentaire" cols="50" rows="10" placeholder="Voulez-vous me contacter ?"></textarea>
+        <input id="btnSubmit" type="submit" value="Envoyer">
     </form>
-</fieldset>
+    </div>
 </main>

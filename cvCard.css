@@ -47,7 +47,7 @@ nav{
     grid-row-end: 14;
     grid-column-start: 3;
     z-index: 3;
-    box-shadow: 2px 2px 6px rgb(54, 75, 50);;
+    box-shadow: 2px 2px 6px rgb(54, 75, 50);
 }
 nav section{
     list-style: none;
@@ -440,99 +440,121 @@ color: #72f59344;
 
 /* ============================= Contact ================================= */
 .main-contact{
+    padding-left: 100px;
     display: flex;
-    flex-direction: column;
     justify-content: space-evenly;
-    font-size: 50px;
-    margin-left: 5vw;
-    height: 100%;
     align-items: center;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 100%;
 }
-.element{
+
+#boxBtnCV{
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+}
+#btnCV a{
+    color: #5aca76;
+}
+#btnCV{
+    font-size: 30px;
+    
+    width: 150px;
+    height: 80px;
+    border: #5aca76 solid 2px;
+    background-color: #222222;
+    grid-row: 2;
+    grid-column: 5;
+    transition: 0.5s;
+}
+#btnCV:hover{
+    transform: scale(0.9);
+box-shadow:none;
+border-top: #5aca76 solid 15px;
+border-bottom: #5aca76 solid 15px;
+border-left: #5aca76 solid 15px;
+border-right: #5aca76 solid 15px;
+transition: 0.5s;
+}
+#form{
+    border: #45ac5e solid 2px;
+    padding: 20px;
+}
+form{
+    width: 100%;
+    height: 300px;
+    color: #3aa354;
+    display: grid;
+    grid-template-columns:200px 200px  100px  200px  200px;
+    grid-template-rows:50px 50px 150px 50px;
+}
+form > label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#labelprenom{
+    grid-row: 1;
+    grid-column: 1;
+}
+#inputprenom{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    grid-row: 1;
+    grid-column: 2;
+}
+#labelnom{
+    grid-row: 1;
+    grid-column: 4;
+}
+#inputnom{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    grid-row: 1;
+    grid-column: 5;
+}
+#labelemail{
+    grid-row: 2;
+    grid-column: 1;
+}
+#inputemail{
+    margin-top:10px ;
+    margin-bottom: 10px;
+    grid-row: 2;
+    grid-column: 2;
+}
+#commentaire{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    grid-row: 3;
+    grid-column: 1/6;
+}
+
+#btnSubmit{
+    grid-row: 4;
+    grid-column: 3;
+    font-size: 10
+    3px;
+    color: #3aa354;
+    border: #5aca76 solid 2px;
+    background-color: #222222;
+}
+#btnSubmit:hover{
+    transform: scale(0.9);
+    box-shadow:none;
+    border-top: #5aca76 solid 15px;
+    border-bottom: #5aca76 solid 15px;
+    border-left: #5aca76 solid 15px;
+    border-right: #5aca76 solid 15px;
+    transition: 0.5s;
 }
 #mail{
     font-size: 30px;
 }
-/* .box{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #478f58;
-    height: 98%;
-    width: 10vw;
-}
-.box div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 11vw;
 
-}
-#mail{
-    z-index: 2;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column; 
-}
-#begin{
-    padding-top: 4vh;
-    justify-content: flex-end;
-    writing-mode: vertical-rl;
-    font-size: 3.5vh;
-}
-#end{
-    padding-bottom: 4vh;
-    font-size: 3.5vh;
-    writing-mode: vertical-rl;
-}
-#arobase{
-    color: #478f58;
-    background-color:#222222;
-    /* border: solid 1px #397e49; 
-    width: 11vw;
-    height: 20vh;
-    padding: 20px;
-    border-radius: 150px;
-    transition: 1s;
-}
-#arobase:hover{
-    align-items: center;
-    height: 70vh;
-    transition: 1s;
-}
-.box  #btnCV a{
-    transition: 1s;
-    align-items: center;
-    padding: 20px;
-    color: #397e49;
-    background-color:#222222;
-    width:11vw;
-    height: 20vh;
-    border-radius: 150px;
-}
-.box #link{
-    align-items: center;
-    transition: 1s;
-    padding: 20px;
-    color: #397e49;
-    background-color:#222222;
-    width: 11vw;
-    height: 20vh;
-    border-radius: 150px;
-}
-#link:hover{
-    align-items: center;
-    height: 70vh;
-    transition: 1s;
-}
-#btnCV a:hover{
-    align-items: center;
-    height: 70vh;
-    transition: 1s;
-} */
+
+
 
 /* ============El Diablo Responsive de la Muerte ======== */
 
@@ -614,6 +636,16 @@ body >main{
 }
 .forScroll{
     padding: 0px;
+}
+.main-contact{
+    padding-left: 0;
+}
+}
+@media screen and (max-width: 1320px){
+form{
+    display: flex;
+    flex-direction: column;
+
 }
 }
 
