@@ -1,0 +1,49 @@
+*,::before,::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+@font-face {
+    font-family: sacramento;
+    src: url(./img/Sacramento-Regular.ttf);
+}
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color:  #353333;
+}
+header{
+    border: 0.2rem solid #fff;
+    border-radius: 2rem;
+    margin-top: 50px;
+    padding: 0.4em;
+    box-shadow: 0 0 .2rem #fff,
+                0 0 .2rem #fff,
+                0 0 2rem #bc13fe,
+                0 0 0.8rem #bc13fe,
+                0 0 2.8rem #bc13fe,
+                inset 0 0 1.3rem #bc13fe; 
+    width: 80%;
+    height: 80vh;
+}
+#title{
+    font-size: 50px;
+    font-family: sacramento;
+    color: #fff;
+    text-shadow:
+    0 0 5px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #bc13fe,
+    0 0 82px #bc13fe,
+    0 0 92px #bc13fe,
+    0 0 102px #bc13fe,
+    0 0 151px #bc13fe;
+}
+
+#main-aboutme{
+    width: 90%;
+    height: 300px;
+
+}
