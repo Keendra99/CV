@@ -4,46 +4,88 @@
     box-sizing: 0;
 }
 @font-face {
-    font-family: sacramento;
-    src: url(./img/Sacramento-Regular.ttf);
+    font-family: anton;
+    src: url(./font/Anton-Regular.ttf);
 }
 body{
+    background-color:  #c8cdf8c0;
+}
+main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color:  #353333;
 }
 header{
-    border: 0.2rem solid #fff;
-    border-radius: 2rem;
-    margin-top: 50px;
-    padding: 0.4em;
-    box-shadow: 0 0 .2rem #fff,
-                0 0 .2rem #fff,
-                0 0 2rem #bc13fe,
-                0 0 0.8rem #bc13fe,
-                0 0 2.8rem #bc13fe,
-                inset 0 0 1.3rem #bc13fe; 
-    width: 80%;
-    height: 80vh;
+    height: 55vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
-#title{
-    font-size: 50px;
-    font-family: sacramento;
-    color: #fff;
-    text-shadow:
-    0 0 5px #fff,
-    0 0 10px #fff,
-    0 0 21px #fff,
-    0 0 42px #bc13fe,
-    0 0 82px #bc13fe,
-    0 0 92px #bc13fe,
-    0 0 102px #bc13fe,
-    0 0 151px #bc13fe;
+#banner{
+    width: 100%;
+    height: 100%;
+    border: #002e6b solid 10px;
 }
 
-#main-aboutme{
-    width: 90%;
+#bar{
+    border: #002e6b solid 10px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 85% 100%, 84% 50%, 15% 50%, 14% 100%, 0% 100%);
+    height:50px;
+    background: #002e6b;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+}
+#presentation{
+    font-size: 18px;
+    font-family: anton;
+    margin-bottom: 20px;
+}
+#characteristicBox{
+    margin-top: 20px;
+    margin-bottom: 50px;
+    /* border: #ff0101 solid 2px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 200px;
+    width: 100%;
+    /* clip-path: polygon(15% 10%, 85% 10%, 88% 0%, 100% 0%, 100% 100%, 88% 100%, 85% 90%, 15% 90%, 12% 100%, 0% 100%, 0% 0%, 12% 0%); */
+}
+.band{
+    color: #8c24a8;
+    font-size: 30px;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(99, 99, 99, 0.103);
+    width: 150px;
+    height:80px;
+    clip-path: polygon(25.3% 0%, 100% 0%, 75.3% 100%, 0% 100%);
+
+}
+#skillsBox{
+    font-size:60px;
     height: 300px;
-
+    width: 100%;
+    background-color: rgba(99, 99, 99, 0.103);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#mysql{
+    font-size: 40px;
+    /* background-image: conic-gradient(rgb(70, 196, 187) 60deg,rgb(224, 112, 191) 100deg); */
+}
+#skillsBox > .icon{
+    color: #5ec9cc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: solid #5ec9cc 3px;
+background-color: #002e6b;
 }

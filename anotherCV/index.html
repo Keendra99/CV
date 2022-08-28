@@ -5,85 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>anotherCV</title>
 </head>
 <body>
     <header>
-<section id="presentationBox">
-            <div id="presentation">
-                <div id="title"><h1>Kendra Jacquet</h1><h2>Développeuse Web et Web Mobile Junior</h2></div>
-                
+        <img id="banner" src="./img/bannerCV.png" alt="">
+    </header>
+    <div id="bar"></div>
+<main><div id="presentation">
                 <p>Étant en formation de développeur web et web mobile, je suis actuellement à la recherche d'un stage d'une durée de 3 mois se déroulant du 17/10/2022 au 20/01/2023.</p>
             </div>
-            <img id="avatar" src="./avataaars.png" alt="avatar">
-    
+                    <section id="characteristicBox">
+                    <div class="band" id="computer"><i class="fa-solid fa-computer"></i></div>
+                    <div class="band" id="book"><i class="fa-solid fa-book-open"></i></div>
+                    <div class="band" id="game"><i class="fa-solid fa-gamepad"></i></div>
+                    <div class="band" id="cine"><i class="fa-solid fa-clapperboard"></i></div>
+                    <div class="band" id="music"><i class="fa-solid fa-headphones-simple"></i></div>
+                    <div class="band" id="fitness"><i class="fa-solid fa-dumbbell"></i></div>
         </section>
 
-    </header>
+    <section id="skillsBox">
+        <div class="icon" id="html"><i class="fa-brands fa-html5"></i></div>
+        <div class="icon" id="css"><i class="fa-brands fa-css3-alt"></i></div>
+        <div class="icon" id="mysql">MySQL</div>
+        <div class="icon" id="sf"><i class="fa-brands fa-symfony"></i></div>
+        <div class="icon" id="git"><i class="fa-brands fa-git-alt"></i></div>
+        <div class="icon" id="angular"><i class="fa-brands fa-angular"></i></div>
+    </section>
 
-    <main id="main-aboutme">
-        <section id="characteristicBox">
-            <article id="qualities">
-                <div class="qualityElements">
-                    <h3>Travail d'équipe</h3>
-                    <div class="qualityBar">
-                        <div class="valueBar" id="aValue"></div>
-                    </div>
-                </div>
-                <div class="qualityElements">
-                    <h3>Curiosité</h3>
-                    <div class="qualityBar">
-                        <div class="valueBar" id="bValue"></div>
-                    </div>
-                </div>
-                <div class="qualityElements">
-                    <h3>Implication</h3>
-                    <div class="qualityBar">
-                        <div class="valueBar" id="cValue"></div>
-                    </div>
-                </div>
-                <div class="qualityElements">
-                    <h3>Créativité</h3>
-                    <div class="qualityBar">
-                        <div class="valueBar" id="dValue"></div>
-                    </div>
-                </div>
-                <div class="qualityElements">
-                    <h3>Patience</h3>
-                    <div class="qualityBar">
-                        <div class="valueBar" id="eValue"></div>
-                    </div>
-                </div>
-            </article>
-            <article id="hobbiesElements">
-                    <div class="band" id="computer"><i class="fa-solid fa-computer"></i><h3>Utiliser un ordinateur</h3></div>
-                    <div class="band" id="book"><i class="fa-solid fa-book-open"></i><h3>Lire</h3></div>
-                    <div class="band" id="game"><i class="fa-solid fa-gamepad"></i><h3>Jouer aux jeux vidéo</h3></div>
-                    <div class="band" id="cine"><i class="fa-solid fa-clapperboard"></i><h3>Films, séries, animes</h3></div>
-                    <div class="band" id="music"><i class="fa-solid fa-headphones-simple"></i><h3>Écouter de la musique</h3></div>
-                    <div class="band" id="fitness"><i class="fa-solid fa-dumbbell"></i><h3>Fitness</h3></div>
-            </article>
-            <article id="languages">
-                <div id="languagesElements">
-                    <ul>
-                        <li>Français (native)</li>
-                        <li>Anglais (B1)</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-        <section id="skillsBox">
-            <div class="iconPL" id="html"><i class="fa-brands fa-html5"></i></div>
-            <div class="iconPL" id="css"><i class="fa-brands fa-css3-alt"></i></div>
-            <div class="iconPL" id="js"><i class="fa-brands fa-js"></i></div>
-            <div class="iconPL" id="php"><i class="fa-brands fa-php"></i></div>
-            <div class="iconPL" id="mysql">MySQL</div>
-            <div class="iconPL" id="sf"><i class="fa-brands fa-symfony"></i></div>
-            <div class="iconPL" id="git"><i class="fa-brands fa-git-alt"></i></div>
-            <div class="iconPL" id="angular"><i class="fa-brands fa-angular"></i></div>
-        </section>
-    </main>
-    
     <main class="main-exp">
         <section class="forScroll">
         <div class="exp2">
@@ -95,7 +45,46 @@
                 <li class="three"><h3>Brevet</h3> <p>2015<br>Collège Lamartine<br>Soissons</p> </li>
             </lu>
         </div>
-    
+        <article id="languages">
+            <div id="languagesElements">
+                <ul>
+                    <li>Français (native)</li>
+                    <li>Anglais (B1)</li>
+                </ul>
+            </div>
+        </article>
+        <article id="qualities">
+            <div class="qualityElements">
+                <h3>Travail d'équipe</h3>
+                <div class="qualityBar">
+                    <div class="valueBar" id="aValue"></div>
+                </div>
+            </div>
+            <div class="qualityElements">
+                <h3>Curiosité</h3>
+                <div class="qualityBar">
+                    <div class="valueBar" id="bValue"></div>
+                </div>
+            </div>
+            <div class="qualityElements">
+                <h3>Implication</h3>
+                <div class="qualityBar">
+                    <div class="valueBar" id="cValue"></div>
+                </div>
+            </div>
+            <div class="qualityElements">
+                <h3>Créativité</h3>
+                <div class="qualityBar">
+                    <div class="valueBar" id="dValue"></div>
+                </div>
+            </div>
+            <div class="qualityElements">
+                <h3>Patience</h3>
+                <div class="qualityBar">
+                    <div class="valueBar" id="eValue"></div>
+                </div>
+            </div>
+        </article>
     
     
         <div class="exp3">
@@ -132,5 +121,6 @@
         </form>
         </div> -->
     </main>
+</main>
 </body>
 </html>

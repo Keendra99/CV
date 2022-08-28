@@ -437,7 +437,10 @@ transition: none;
 color: #72f59344;
 }
 
-
+.picture2  i{
+    font-size: 200px;
+    color: #39d656;
+}
 /* ============================= Contact ================================= */
 .main-contact{
     padding-left: 100px;
