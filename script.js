@@ -8,12 +8,12 @@ for(let i = 0; i<liens.length; i++){
         liens[i].addEventListener("click", router);
     }
 const routes = {
-    "/":"pages/aboutMe.html",
-    "/index.html":"pages/Aboutme.html",
-    "/Exp":"pages/Exp.html",
-    "/Portfolio":"pages/Portfolio.html",
-    "/Contact":"pages/Contact.html",
-    404: "pages/404.html"
+    "/":"CV/pages/aboutMe.html",
+    "/index.html":"CV/pages/Aboutme.html",
+    "/Exp":"CV/pages/Exp.html",
+    "/Portfolio":"CV/pages/Portfolio.html",
+    "/Contact":"CV/pages/Contact.html",
+    404: "CV/pages/404.html"
 }
 
 function router(e) {
