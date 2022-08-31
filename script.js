@@ -8,11 +8,11 @@ for(let i = 0; i<liens.length; i++){
         liens[i].addEventListener("click", router);
     }
 const routes = {
-    "/":"CV/pages/aboutMe.html",
-    "/index.html":"CV/pages/Aboutme.html",
-    "/Exp":"CV/pages/Exp.html",
-    "/Portfolio":"CV/pages/Portfolio.html",
-    "/Contact":"CV/pages/Contact.html",
+    "/CV":"CV/pages/aboutMe.html",
+    "CV/index.html":"CV/pages/Aboutme.html",
+    "CV/Exp":"CV/pages/Exp.html",
+    "CV/Portfolio":"CV/pages/Portfolio.html",
+    "CV/Contact":"CV/pages/Contact.html",
     404: "CV/pages/404.html"
 }
 
