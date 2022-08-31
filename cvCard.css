@@ -38,11 +38,11 @@ body >main{
 }
 /* ============================= NAV ================================= */
 nav{
+    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
     background-color: #409154;
-    width: 100;
     grid-row-start: 2;
     grid-row-end: 14;
     grid-column-start: 3;
@@ -818,7 +818,6 @@ body >main{
 nav{
     position: absolute;
     border-radius: 0;
-
 }
 #useless{
     display: flex;
@@ -855,6 +854,7 @@ nav{
     padding-bottom: 10px;
 }
 }
+
 @media screen and (max-width: 617px){
     .band i{
         font-size: 15px;
@@ -862,8 +862,7 @@ nav{
     #hobbiesElements div > h3{
         font-size: 12px;
     }
-}
-@media screen and (max-width: 617px){
+
     #avatar{
         width: 120px;
         height: 120px;
@@ -881,20 +880,18 @@ nav{
 #presentationBox{
     margin-bottom: 10px;
 }
+body{
+    display: grid;
+    grid-template-columns: 30PX 60px 80px repeat(8, 1fr) 30PX;
+    grid-template-rows: 10px 10PX repeat(10, 1fr) 20PX 0PX;
 }
-/* @media screen and (max-width: 432px){
-    #avatar{
-        width: 110px;
-        height: 110px;
-    }
-    #qualities{
-        width: 270px;
-    }
-    .qualityBar{
-        height: 6px;
-        width: 145px;
-    }
-} */
+nav{
+position: absolute;
+left: 2.5%;
+top: 45px;
+width: 95%;
+}
+}
 /* experience */
 @media screen and (max-width: 600px){
     .main-exp h2{
@@ -908,11 +905,7 @@ nav{
     }
 }
 @media screen and (max-width: 463px){
-    body{
-        display: grid;
-        grid-template-columns: 30PX 60px 80px repeat(8, 1fr) 30PX;
-        grid-template-rows: 20px 40PX repeat(10, 1fr) 30PX 0PX;
-    }
+
     #avatar{
         width: 90px;
         height: 90px;
@@ -929,3 +922,59 @@ nav{
     }
 }
 
+/* RESPONSIVE HEIGHT DE LE  MUERTE */
+@media screen and (max-height: 870px){
+    #avatar{
+        width: 170px;
+        height: 170px;
+    }
+    /* nav{
+        width: 60px;
+    } */
+    nav i{
+        font-size: 35px;
+    }
+}
+@media screen and (max-height: 795px){
+    .qualityBar{
+        height: 8px;
+        width: 250px;
+    }
+    .band i{
+        font-size: 20px;
+    }
+    #hobbiesElements{
+        width: 300px;
+    }
+    #skillsBox{
+        margin-bottom: 30px;
+        height: 100px;
+    }
+    .iconPL i{
+        font-size: 40px;
+    }
+    #mysql{
+        font-size: 30px;
+    }
+}
+@media screen and (max-height: 728px){
+    #avatar{
+        width: 150px;
+        height: 150px;
+    }
+    #title h1{
+        font-size: 35px;
+    }
+    #title h2{
+        font-size: 20px;
+    }
+    #presentation p{
+        font-size: 12px;
+    }
+}
+@media screen and (max-height: 711px){
+    #skillsBox{
+        height: 80px;
+        margin-bottom: 45px;
+    }
+}
