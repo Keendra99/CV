@@ -227,7 +227,7 @@ font-size: 35px;
     color: #3aa354;
 }
 #languagesElements ul{
-
+    text-align: center;
     height: 80%;
     display: flex;
     justify-content: space-evenly;
@@ -906,5 +906,8 @@ nav{
     .main-exp p{
         font-size: 15px;
     }
+}
+@media screen and (max-width: 600px){
+    
 }
 
