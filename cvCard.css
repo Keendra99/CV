@@ -353,8 +353,8 @@ font-size: 35px;
 .cards{
     box-shadow: 5px 5px 10px #030e05,-5px -5px 10px ;
     border: #5aca76 solid 2px;
-    width: 300px;
-    height: 370px;
+    width: fit-content;
+    height: fit-content;
     transition: 3s;
 }
 .cards:hover{
@@ -438,8 +438,12 @@ color: #72f59344;
 }
 
 .picture2  i{
-    font-size: 200px;
-    color: #39d656;
+width: 100%;
+height: 300px;
+    font-size: 5rem;
+    color: #eb801c;
+
+    border-radius: 50%;
 }
 /* ============================= Contact ================================= */
 .main-contact{
@@ -603,10 +607,10 @@ form > label{
         grid-template-rows: 0px 50PX repeat(10, 1fr) 50PX 0PX;
 }
 nav{
+    border-radius: 10px;
     left: 5%;
     top: 90px;
     position: absolute;
-    border-radius: 0;
     width: 90%;
     height: 5vh;
 }
@@ -816,8 +820,8 @@ body >main{
         grid-template-rows: 20px 40PX repeat(10, 1fr) 30PX 0PX;
     }
 nav{
+    border-radius: 10px;
     position: absolute;
-    border-radius: 0;
 }
 #useless{
     display: flex;
@@ -923,18 +927,18 @@ width: 95%;
 }
 
 /* RESPONSIVE HEIGHT DE LE  MUERTE */
-@media screen and (max-height: 870px){
-    #avatar{
+@media screen and (max-height: 882px){
+    #avatar1{
         width: 170px;
         height: 170px;
-    }
+    }}
     /* nav{
         width: 60px;
     } */
     nav i{
         font-size: 35px;
     }
-}
+
 @media screen and (max-height: 795px){
     .qualityBar{
         height: 8px;
@@ -958,10 +962,10 @@ width: 95%;
     }
 }
 @media screen and (max-height: 728px){
-    #avatar{
+    /* #avatar{
         width: 150px;
         height: 150px;
-    }
+    } */
     #title h1{
         font-size: 35px;
     }
@@ -976,5 +980,87 @@ width: 95%;
     #skillsBox{
         height: 80px;
         margin-bottom: 45px;
+    }
+}
+@media screen and (max-height: 881px) and (max-width: 426px){
+#languagesElements li{
+font-size: 12px;
+}
+#languages{
+    margin: 8PX;
+}
+}
+@media screen and (max-height: 819px) and (max-width: 378px){
+#skillsBox{
+    padding-top: 3px;
+}
+#title h1{
+    font-size: 20px;
+}
+#title h2{
+    font-size: 16px;
+}
+#qualities > .qualityElements  h3{
+font-size: 12px;
+}
+}
+@media screen and (max-height: 795px) and (max-width: 461px){
+    #skillsBox{
+        padding-top: 3px;
+    }
+    .iconPL i{
+        font-size: 25px;
+    }
+    #mysql{
+        font-size: 20px;
+    }
+    #languagesElements ul li{
+        font-size: 13px;
+        padding-top: 20px;
+        padding-right: 5px ;
+        }
+        #languages{
+            margin: 0;
+            height: 50px;
+        }
+    #presentationBox{
+        margin-bottom: 0;
+    }
+    #qualities{
+        width: 90%;
+    }
+    #qualities > .qualityElements  h3{
+        font-size: 12px;
+        }
+    .qualityBar{
+        width: 200px;
+    }
+    #title h1{
+        font-size: 25px;
+    }
+    #title h2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-height: 758px) and (max-width: 387px){
+    .qualityElements{
+        height: 20px;
+    }
+    .qualityBar{
+        width: 170px;
+        height: 7px;
+
+    }
+    #qualities{
+        width: 100%;
+    }
+    #hobbiesElements i{
+        font-size: 15px;
+    }
+    #hobbiesElements .band  h3{
+        font-size: 10px;
+    }
+    #mysql{
+        font-size: 15px;
     }
 }
